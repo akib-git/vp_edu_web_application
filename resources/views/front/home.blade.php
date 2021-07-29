@@ -25,26 +25,14 @@
                     <div class="notice-bord style1">
                         <h4 class="title">Notice Board</h4>
                         <ul>
-                            <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
-                                <div class="date"><span>20</span>June</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting</div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms">
-                                <div class="date"><span>22</span>Aug</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting</div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms">
-                                <div class="date"><span>14</span>May</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting</div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms">
-                                <div class="date"><span>31</span>Sept</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting</div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms">
-                                <div class="date"><span>28</span>Oct</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting</div>
-                            </li>
+                            @foreach ($notices as $notice)
+                                <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
+                                    {{-- <div class="date"><span>20</span>June</div> --}}
+                                    <div class="date">{{$notice->created_at}}</div>
+                                    <div class="desc">{{$notice->title}}</div>
+                                </li>
+                            @endforeach
+                            <a class="d-block btn-part text-right sm-text-left" href="javascript:void(0)"><h6 class="readon">View all notices</h6></a>
                         </ul>
                     </div>
                 </div>
