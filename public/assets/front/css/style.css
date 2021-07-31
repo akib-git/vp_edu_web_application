@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800');
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
-@charset "utf-8";
+/* @charset "utf-8"; */
 /**
 *
 * -----------------------------------------------------------------------------
@@ -3855,7 +3855,7 @@ ul.listing-style.modify li:before {
   background: #ffffff !important;
 }
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-  margin-right: 40px !important;
+  margin-right: 20px !important;
 }
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
   color: #111111 !important;
