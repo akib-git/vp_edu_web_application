@@ -25,5 +25,7 @@ Route::get('/blog',[FrontController::class, 'blog_view']);
 Route::get('/login',[FrontController::class, 'front_login']);
 Route::get('/register',[FrontController::class, 'front_register']);
 // ======Route for admin panel============
-// Route::get('/admin/dashboard',[]);
+Route::get('/admin/dashboard',function(){
+    return view('admin.layouts.master');
+});
 
