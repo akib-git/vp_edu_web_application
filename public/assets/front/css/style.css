@@ -1866,19 +1866,21 @@ ul.listing-style.modify li:before {
   padding-right: 12px;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a:before {
-  content: "+";
-  position: absolute;
-  left: auto;
-  right: 0;
-  top: 50%;
-  text-align: center;
-  display: block;
-  cursor: pointer;
-  transform: translateY(-50%);
-  transition: all .5s ease;
+    content: "\f107";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all .5s ease;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a:hover:before {
-  content: "-";
+    content: "\f106";
+    font-family: "FontAwesome";
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li:last-child {
   margin-right: 0!important;
@@ -3854,7 +3856,8 @@ ul.listing-style.modify li:before {
 .full-width-header.home1-modifiy .rs-header .menu-area {
   background: #ffffff !important;
 }
-.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
+.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu > li {
+  /* margin-right: 0px !important; */
   margin-right: 20px !important;
 }
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {

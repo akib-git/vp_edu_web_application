@@ -58,16 +58,8 @@
             </div>
         </div>
         <!--Preloader area End here-->
-
         @include('front.layouts.header')
-
-
-
 		@yield('front_end_content')
-
-
-
-
         @include('front.layouts.footer')
         <!-- modernizr js -->
         <script src="{{asset('assets/front/js/modernizr-2.8.3.min.js') }}"></script>

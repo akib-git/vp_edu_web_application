@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminPagesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\FrontController;
 
@@ -25,7 +26,11 @@ Route::get('/blog',[FrontController::class, 'blog_view']);
 Route::get('/login',[FrontController::class, 'front_login']);
 Route::get('/register',[FrontController::class, 'front_register']);
 // ======Route for admin panel============
-Route::get('/admin/dashboard',function(){
-    return view('admin.layouts.master');
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard',[AdminPagesController::class,'dashboard_view']);
+    Route::get('/mentor',[AdminPagesController::class,'mentor_view']);
+    Route::get('/mentee',[AdminPagesController::class,'mentee_view']);
+    Route::get('/videocall',[AdminPagesController::class,'videocall_view']);
 });
+
 
